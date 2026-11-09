@@ -10,10 +10,19 @@ import requests
 NY = ZoneInfo("America/New_York")
 
 # Edit this list. Trading is blocked on these same-day CPI and FOMC dates.
-# Dates are placeholders. Replace them with the days you care about.
+# Announcement days only. FOMC is the decision day, not the first meeting day.
+# BLS lists 2026 CPI releases for Nov 10 and Dec 10. Earlier 2026 CPI dates are not on that page.
 CPI_FOMC_DATES = [
+    ("2026-01-28", "FOMC"),
+    ("2026-03-18", "FOMC"),
+    ("2026-04-29", "FOMC"),
+    ("2026-06-17", "FOMC"),
+    ("2026-07-29", "FOMC"),
+    ("2026-09-16", "FOMC"),
+    ("2026-10-28", "FOMC"),
+    ("2026-11-10", "CPI"),
+    ("2026-12-09", "FOMC"),
     ("2026-12-10", "CPI"),
-    ("2026-12-16", "FOMC"),
 ]
 
 
